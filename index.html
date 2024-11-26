@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крутая Компания</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="img/logo.png" alt="логотип" class="logo">
+            <div class="inner-wrapper">
+                <div class="offer">
+                    <h1 class="offer__title">С помощью нас вы сможете создать то, о чем</h1>
+                    <span class="offer__span">Желаете!</span>
+                    <p class="offer__text">Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас! И знаем это на все 100%. Вас не остановить!</p>
+                    <a href="#" class="btn">Узнать больше...</a>
+                </div>
+                <img src="img/header-img.png" alt="изображение заголовка" class="header-img">
+            </div>
+        </div>
+    </header>
+
+    <div class="center">
+        <div class="container1">
+            <div class="center__header"><h2>Что вам необходимо?</h2></div>
+            <div class="center__inner-wrapper">
+                <div class="item"><img src="img/f3.png" alt="блок 1" class="item__image"><br>
+                    <strong>Первый блок</strong><br>
+                    <span class="center__span">Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+                </div>
+                <div class="item"><img src="img/f4.png" alt="блок 2" class="item__image"><br>
+                    <strong>Второй блок</strong><br>
+                    <span class="center__span">Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+                </div>
+                <div class="item"><img src="img/f5.png" alt="блок 3" class="item__image"><br>
+                    <strong>Третий блок</strong><br>
+                    <span class="center__span">Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="container2">
+            <div class="bottom__header"><h2>Форма регистрации</h2></div>
+            <div class="bottom__inner-wrapper">
+                <form id="registrationForm" onsubmit="return submitForm();">
+                    <div class="item1"><input type="text" id="name" placeholder="Имя" required></div>
+                    <div class="item1"><input type="text" id="dob" placeholder="Дата рождения (ДД.ММ.ГГГГ)" pattern="^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[0-2])\.\d{4}$" required></div>
+                    <div class="item1"><input type="tel" id="phone" placeholder="Номер телефона" pattern="^\+?[\d\s\-()]+$" required></div>
+                    <div class="item1"><input type="number" id="pets" placeholder="Количество домашних животных" min="0" required></div>
+                    <button type="button" class="btn1" onclick="submitForm()">Отправить данные</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="container2">
+            <div class="bottom__header"><h2>Форма заказа обратного звонка</h2></div>
+            <div class="bottom__inner-wrapper">
+                <form id="callbackForm" onsubmit="return submitCallbackForm();">
+                    <div class="item1"><input type="text" class="bottom__name" placeholder="Имя" required></div>
+                    <div class="item1"><input type="email" class="bottom__email" placeholder="Введите свой E-mail" required></div>
+                    <div class="item1"><input type="tel" class="bottom__telephone" placeholder="Телефон" pattern="^\+?[\d\s\-()]+$" required></div>
+                    <div class="item1"><input type="text" class="bottom__question" placeholder="Какая тема вас интересует?" required></div>
+                    <button type="submit" class="btn1">Отправить вопрос!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="container3">
+            <footer class="footer">&#169; Все на этом сайте защищено</footer>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
